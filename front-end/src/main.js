@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+// 创建一个vue实例
 new Vue({
   el: '#app',
   router,
