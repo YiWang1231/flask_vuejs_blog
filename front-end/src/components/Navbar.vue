@@ -30,7 +30,7 @@
             <a class="nav-link disabled" href="#">Messages</a>
           </li>
           <li class="nav-item">
-            <router-link to="/profile" class="nav-link">Profile</router-link>
+            <router-link v-bind:to="{name: 'Profile', params:{id:sharedState.user_id}}" class="nav-link">Profile</router-link>
           </li>
           <li class="nav-item">
             <a v-on:click="handlerLogout" class="nav-link" href="#">Logout</a>
@@ -38,7 +38,7 @@
         </ul>
         <ul v-else class="nav navbar-nav navbar-right">
           <li class="nav-item">
-            <route-link to="/login" class="nav-link">Login</route-link>
+            <router-link to="/login" class="nav-link">Login</router-link>
           </li>
         </ul>
       </div>

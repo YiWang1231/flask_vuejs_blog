@@ -83,11 +83,11 @@ import axios from 'axios'
             return false
           }
 
-          const path = 'http://localhost:5000/api/tokens'
+          const path = '/tokens' // 不需要完成的API地址
           // axios 实现Basic Auth需要在Config中设置auth这个属性即可
           // post(url, data, config)
           // config{ auth {'username', 'password'}}
-          axios.post(path, {}, {
+          this.$axios.post(path, {}, {
             auth: {
               'username': this.loginForm.username,
               'password': this.loginForm.password
